@@ -1,10 +1,10 @@
 <h1>Your Personal Contacts</h1>
-<p>Find me in app/views/contacts/index.html.erb</p>
+<h6><%= link_to "Add a new contact", 'contacts/new' %></h6>
 
 <% @contacts.each do |contact| %>
 
-<h5><%= contact.first_name %></h5>
-  <p><%= contact.last_name %></p>
+<h5><%= contact.first_name %>
+  <%= contact.last_name %></h5>
   <p><%= contact.phone %></p>
   <p><%= contact.email %></p>
   <p><%= contact.address %></p>

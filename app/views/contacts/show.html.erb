@@ -1,0 +1,16 @@
+
+
+
+  <h5><%= contact.first_name %>
+    <%= contact.last_name %></h5>
+  <p><%= contact.phone %></p>
+  <p><%= contact.email %></p>
+  <p><%= contact.address %></p>
+
+  <%= link_to "Edit  #{@contact.first_name}", edit_contact_path(@contact) %>
+
+  <%= form_for contact, html: {method: 'delete'} do |f| %>
+    <%= f.submit "Delete #{contact.first_name}??" %>
+
+<% end  %>
+  <%= link_to "All Contacts", contacts_path %>

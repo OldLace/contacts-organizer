@@ -1,0 +1,13 @@
+<h1>Add New Contact</h1>
+<%= form_for @contact do |f| %>
+  <%= f.text_field :first_name, placeholder: "First Name" %>
+  <%= f.text_field :last_name, placeholder: "Last Name" %>
+  <%= f.text_field :address, placeholder: "Address" %>
+  <%= f.text_field :phone, placeholder: "Phone" %>
+  <%= f.text_field :email, placeholder: "Email Address" %>
+  <%= f.submit "submit"%>
+<% end %>
+
+
+
+<!--@biz_contacts = Biz_Contact.all-->

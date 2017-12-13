@@ -1,12 +1,13 @@
 <h1>Your Business Contacts</h1>
 <p>Find me in app/views/biz_contacts/index.html.erb</p>
 
-<% @contacts.each do |contact| %>
+<% @biz_contacts.each do |biz_contact| %>
 
-  <h5><%= contact.first_name %></h5>
-  <p><%= contact.last_name %></p>
-  <p><%= contact.phone %></p>
-  <p><%= contact.email %></p>
-  <p><%= contact.address %></p>
+  <h5><%= biz_contact.first_name %></h5>
+  <p><%= biz_contact.last_name %></p>
+  <p><%= biz_contact.company %></p>
+  <p><%= biz_contact.phone %></p>
+  <p><%= biz_contact.email %></p>
+  <p><%= biz_contact.address %></p>
   <hr>
 <% end  %>
