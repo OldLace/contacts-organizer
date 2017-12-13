@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+
+.contactName {
+    font-family: 'Open Sans', sans-serif;
+
+}

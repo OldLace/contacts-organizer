@@ -1,12 +1,16 @@
 <h1>Your Personal Contacts</h1>
 <h6><%= link_to "Add a new contact", 'contacts/new' %></h6>
 
+<div className="contactdiv">
 <% @contacts.each do |contact| %>
-
-<h5><%= contact.first_name %>
-  <%= contact.last_name %></h5>
+<p class="contactName"><%= contact.first_name %>
+  <%= contact.last_name %></p>
   <p><%= contact.phone %></p>
   <p><%= contact.email %></p>
   <p><%= contact.address %></p>
-  <hr>
-<% end  %>
+  <h6><%= link_to "Edit", edit_contact_path(contact) %>
+  <%= link_to "Delete", contact_path(contact), data: {confirm: "Are you sure you wish to delete: #{contact.first_name}?",}, method: :delete %></h6>
+    <hr>
+    </div>
+  <% end  %>
+
