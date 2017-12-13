@@ -1,0 +1,2 @@
+class BizContact < ApplicationRecord
+end
